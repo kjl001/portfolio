@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+}
+
+body {
+    --dot-bg: #01011b;
+    --dot-color: #848282;
+    --dot-size: 1px;
+    --dot-space: 50px;
+    background:
+        linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        var(--dot-color);
+}
+
+header {
+    position: fixed;
+    background-color: black;
+    width: 100vw;
+}
+
+#navbar {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+    #navbar > li {
+        float: left;
+    }
+        #navbar > li a {
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+            color: white;
+            font-weight: bold;
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;  
+        }
+        #navbar > li a:hover {
+            box-shadow: inset 0 5em darkslategray;
+        }
+
+main {
+    padding-top: 15vh;
+}
+
+#project-container {
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    row-gap: 10vw;
+    gap: 5vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.project-items {
+    background-color: rgb(23, 25, 35);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 20vw;
+    box-shadow: rgb(1, 8, 62) -10px 0px;
+    
+    color: white;
+    font-family: sans-serif;
+}
