@@ -76,3 +76,13 @@ main {
     color: white;
     font-family: sans-serif;
 }
+
+.project-image {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.project-link {
+    height: 30px;
+    width: 30px;
+}
